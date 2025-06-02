@@ -1,0 +1,151 @@
+Variables : its nothing but container  which store different kinds datatypes 
+ datatypes :values -string ,boolean numbers arrays etc 
+
+Declaration :creation of Variables,function class  etc..
+ var a;
+ a: identifier :
+
+Rules For Writing/declaring the varaible/function Names (identifier)
+1.it shouldnot  contain special charater except $ and _
+2.it shouldnot start with numbers 
+3.it should not reserved keyword (function ,for ,var let const )
+4.it shouldnot white space (full name❌) -->full_name -->fullName 
+
+different ways Declare in js 
+1.use var keyword--->1995 
+2.use let keyword --->es6 (2015)
+3.use const keyword --->es6 (2015)
+4.without any keyword -->global
+
+
+REDEClARATION : creation of varaible with same Name with in the same scope ;
+var a;
+var a;
+INITIALAZATION : assiging a value at time of  creation/Declaration or after creation 
+
+scope: lifetime of varaible (accessibility of varaible) 
+ different types of scope : 
+    global scope : it accessible everywhere with in code 
+    local scope : 
+       block_scope : {}
+       function scope : function example(){}
+       module scope : the code in one file can accessble within other js files 
+
+
+HOISTING : moving all Declaration to top of there scope 
+hoisting is a behavior where declarations of variables and functions are moved to the top of their scope before the code is executed.
+
+
+Temporal Dead Zone:
+This is the period from the start of a scope until the let or const declaration is reached during execution. In the TDZ, you cannot access the variable, even though it's "known" to exist by the JavaScript engine. 
+
+Modules :
+ 
+ Types of modules :
+        common js module :  (before ) 
+             require("module-library/name") //eg : react redux bootstrap-icons fonts   //using the code
+             exports.filename/module //sharing the code 
+        Esm : 
+            import  module from "module-library"  // using the code 
+            export modulename  //sharing the code  
+
+
+            Types of Exports and Imports 
+              Types of Exports 
+                Named export : we need to give the same function varaible ,object etc  where ever using(importing) it
+                         named export can n for a file  
+
+                         ex: export var a=10
+                         ex: export var b=10
+
+                 default exports : we can  import with any name  
+                                default export should one for file 
+                           ex: export default var c=20
+                  Types of Imports 
+                     Named imports  : we need to import with same name
+                      import {a,b} from "./filename"
+                     default Imports : we can import with any name 
+                      import cvalue from "./filename"
+
+Arrays :  it is collection/group of values undersingle varaible name 
+different ways we can create arrays 
+1.using array literals :[]
+2.using the Array global keyword
+3.using the New keyword (array constructor method)
+
+
+useCase : dynamic Data( collection productsinfo) ,login systems ,search functions authentication 
+
+Basic methods 
+pop : removes last element
+push : adds elements to last 
+shift : removes first element
+unshift :adds elements to first  
+slice : extracts the section of array -->  100->20  slice(0,20)
+splice :it adds and reomves the elements from an arrays 
+indexof : returns index of given search-element 
+lastindex :returns index of given search-element  (but search operation takes from last)
+includes: it returns true or false values based on search element 
+
+Higher Order methods 
+**map()----->list & keys in react
+filter() ----->search functionality,filters 
+reduce()---> eccomerce apps ,calculator 
+foreach()
+sort()---> prices from low to high to low
+find() ----
+findindex()
+reverse()
+
+
+Functions : its is a block of code which perfoms specific tasks
+functions are building block of any apps
+specific tasks: opening the popup ,clicking a button  ,adding items ,validating a user ,performing calculation
+
+Readibilty
+reuseablity: write once and use as many times we require 
+modular & clean 
+
+
+Diiferent types of Functions 
+1.Named function 
+2.arrow function
+3.anonoumous function : function without name 
+4.function expression
+5.IFFE :IMmediately invoked function expression 
+6.callback function
+7.generator function
+
+
+decalaration: creation of varaible function or class
+function Data(){ 
+   //code
+}
+//calling the function
+Data()
+
+🎯Parameters|params|formal arguments :(in react we call props) : these are varaibles passed in function decalaration
+  types of paramaters
+  1.default paramaters
+  1.rest paramaters
+
+🎯arguments | actual arguments :these are the values(any datatype) passed in function calling
+
+
+
+
+
+ What is Callback Hell?
+Callback Hell is a situation where multiple nested callbacks make code:
+
+Hard to read
+
+Hard to debug
+
+Hard to maintain
+
+Also called:
+
+Pyramid of Doom
+
+Arrow Anti-pattern

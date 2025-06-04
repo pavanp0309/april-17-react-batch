@@ -9,6 +9,8 @@ import NavBar from './components/NavBar'
 import CourseCards from './CourseCards'
 import Internships from './Internships'
 import Hackathon from './Hackathon'
+import UpcomingBatches from './pages/UpcomingBatches'
+import BatchCard from './components/BatchCard'
 
 const App = () => {
   return (
@@ -26,6 +28,10 @@ const App = () => {
         <Route path='internships' element={<Internships/>}/>
         <Route path='Hackathons' element={<Hackathon/>}/>
     </Route>
+
+    {/* dynamic Routes */}
+    <Route path='/upcoming-batches' element={<UpcomingBatches/>}/>
+    <Route path='/upcoming-batches/:batchid' element={<BatchCard/>}/>
 
  {/* error Handling */}
     <Route path='*' element={<PageNotFound/>}/>
